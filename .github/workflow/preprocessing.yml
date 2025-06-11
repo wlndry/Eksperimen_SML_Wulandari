@@ -2,10 +2,7 @@ name: Preprocessing Workflow
 
 on:
   push:
-    paths:
-      - 'preprocessing/**'
-      - 'recruitment_data_raw.csv'
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
   preprocess:
